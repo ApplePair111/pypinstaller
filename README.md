@@ -1,5 +1,5 @@
 # pypinstaller
-stands for python package installer. Install pip packages if pip doesn't work.
+Stands for Python Package Installer. Install pip packages if pip doesn't work.
 ## Installation
 Run:
 ```bash
@@ -19,3 +19,6 @@ pypinstaller install <package name>
 ```bash
 pypinstaller remove <package name>
 ```
+## Dependencies
+Python 3 (does not work on Python 2)
+python3 command (it uses that for the location)
