@@ -44,8 +44,8 @@ install_package() {
     fi
 
     log "Package URL: $PACKAGE_URL"
-    
-    # Display loading animation
+
+    # Display loading animation (background process)
     loading() {
         local chars="/-\|"
         while true; do
@@ -56,7 +56,7 @@ install_package() {
         done
     }
 
-    loading &
+    loading &  # Start animation
     LOADING_PID=$!
 
     # Download and extract the package
@@ -73,6 +73,7 @@ install_package() {
 
     if [ -z "$EXTRACTED_DIR" ]; then
         echo "Error: Extraction failed."
+        kill "$LOADING_PID" >/dev/null 2>&1  # Stop loading animation
         exit 1
     fi
 
@@ -82,8 +83,11 @@ install_package() {
     log "Moving package to $SITE_PACKAGES..."
     mv "$EXTRACTED_DIR" "$SITE_PACKAGES"
 
-    # Kill loading animation
-    kill "$LOADING_PID" >/dev/null 2>&1
+    # Kill loading animation **only if it's still running**
+    if ps -p "$LOADING_PID" > /dev/null; then
+        kill "$LOADING_PID" >/dev/null 2>&1
+    fi
+
     printf "\rInstallation complete!           \n"
 }
 
@@ -111,4 +115,3 @@ case "$ACTION" in
         exit 1
         ;;
 esac
-
