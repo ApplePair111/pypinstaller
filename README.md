@@ -12,3 +12,10 @@ cd pypinstaller && sudo ./install.sh remove
 ```
 ## Package installation
 Run:
+```bash
+pypinstaller install <package name>
+```
+## Package Uninstallation
+```bash
+pypinstaller remove <package name>
+```
