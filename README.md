@@ -16,11 +16,12 @@ Run:
 pypinstaller install <package name>
 ```
 ## Package Uninstallation
+Run:
 ```bash
 pypinstaller remove <package name>
 ```
 ## Dependencies
-Run:
+
 Python 3 (does not work on Python 2) 
 
 python3 command (it uses that for the location)
