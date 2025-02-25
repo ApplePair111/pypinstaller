@@ -3,7 +3,7 @@ Stands for Python Package Installer. Install pip packages if pip doesn't work.
 ## Installation
 Run:
 ```bash
-git clone https://github.com/ApplePair111/pypinstaller.git && cd pyinstaller && sudo ./installer.sh install
+git clone https://github.com/ApplePair111/pypinstaller.git && cd pypinstaller && chmod +x ./installer.sh && sudo ./installer.sh install
 ```
 ## Uninstallation
 Run:
