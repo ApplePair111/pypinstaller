@@ -20,5 +20,5 @@ pypinstaller install <package name>
 pypinstaller remove <package name>
 ```
 ## Dependencies
-Python 3 (does not work on Python 2)
-python3 command (it uses that for the location)
+Run:
+Python 3 (does not work on Python 2) \n python3 command (it uses that for the location)
