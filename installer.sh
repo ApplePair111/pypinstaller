@@ -14,7 +14,7 @@ install_pypinstaller() {
     fi
 
     # Copy the main script to /usr/bin/
-    cp ./pypinstaller /usr/bin
+    sudo cp ./pypinstaller /usr/bin
 
     echo "pypinstaller has been installed successfully!"
     echo "Usage: pypinstaller install <pkgname>"
