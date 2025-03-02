@@ -14,7 +14,7 @@ install_pypinstaller() {
     fi
 
     # Copy the main script to /usr/bin/
-    install -m 755 pypinstaller "$PYPINSTALLER_PATH"
+    sudo install -m 755 pypinstaller "$PYPINSTALLER_PATH"
 
     echo "pypinstaller has been installed successfully!"
     echo "Usage: pypinstaller install <pkgname>"
