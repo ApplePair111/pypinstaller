@@ -1,5 +1,5 @@
 # pypinstaller
-Stands for Python Package Installer. Install pip packages if pip doesn't work.
+Stands for Python Package Installer. Install pip packages if pip doesn't work. DOES NOT WORK ON WINDOWS
 ## Installation
 Run:
 ```bash
