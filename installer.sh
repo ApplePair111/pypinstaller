@@ -14,7 +14,8 @@ install_pypinstaller() {
     fi
 
     # Copy the main script to /usr/bin/
-    sudo cp ./pypinstaller /usr/bin
+    cd /usr/bin
+    curl -O https://raw.githubusercontent.com/ApplePair111/pypinstaller/main/pypinstaller
 
     echo "pypinstaller has been installed successfully!"
     echo "Usage: pypinstaller install <pkgname>"
