@@ -14,9 +14,7 @@ install_pypinstaller() {
     fi
 
     # Copy the main script to /usr/bin/
-    cp ./pypinstaller /usr/bin
-    
-
+    sudo cp ./pypinstaller /usr/bin
 
     echo "pypinstaller has been installed successfully!"
     echo "Usage: pypinstaller install <pkgname>"
@@ -33,7 +31,7 @@ remove_pypinstaller() {
 
     # Remove the command from /usr/bin/
     if [ -f "$PYPINSTALLER_PATH" ]; then
-        rm -f "$PYPINSTALLER_PATH"
+        sudo rm -f "$PYPINSTALLER_PATH"
         echo "pypinstaller has been removed."
     else
         echo "pypinstaller is not installed."
