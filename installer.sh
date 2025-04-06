@@ -13,8 +13,8 @@ install_pypinstaller() {
         exit 1
     fi
 
-    # Copy the main script to /usr/bin/
-    sudo cp ./pypinstaller /usr/bin
+    # Copy the main script to PATH
+    sudo cp ./pypinstaller /usr/local/bin
 
     echo "pypinstaller has been installed successfully!"
     echo "Usage: pypinstaller install <pkgname>"
