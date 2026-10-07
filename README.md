@@ -25,3 +25,8 @@ pypinstaller remove <package name>
 Python 3 (does not work on Python 2) 
 
 python3 command (it uses that for the location)
+
+
+## ARCHIVED
+
+cuz I am now not an idiot as I was. I know not to use system python and to use pyenv.
